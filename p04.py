@@ -1,6 +1,6 @@
 # -*- coding = utf-8 -*-
+'''自定义装饰器'''
 import time
-
 
 def coust_time(func):
     def impro(*args, **kwargs):
@@ -11,9 +11,6 @@ def coust_time(func):
         return ret
     return impro
 
-
-
-
 @coust_time
 def bianli(y=5):
     for x in range(y):
@@ -21,4 +18,4 @@ def bianli(y=5):
 
 
 if __name__ == "__main__":
-    bianli(y=10)
+    bianli(y=20)
